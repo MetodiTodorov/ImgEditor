@@ -1,0 +1,20 @@
+#pragma once
+
+///////////////////////////////////////////////////////////////////////////////
+#include <wx/wx.h>
+#include "Msg/MsgReceiver.h"
+
+///////////////////////////////////////////////////////////////////////////////
+class StatusBar : public wxStatusBar, public MsgReceiver
+{
+public:
+	StatusBar(wxFrame* parent);
+	~StatusBar();
+
+private:
+	void OnMsgReceived(const Message& msg) override;
+	void OnLoadFile(const Message& msg);
+	void OnWorking(const Message& msg);
+};
+
+///////////////////////////////////////////////////////////////////////////////

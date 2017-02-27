@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{d6f4c5b9-7704-4a80-b641-20076fc2d250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Msg">
+      <UniqueIdentifier>{c3bffce0-e4af-4eca-94f1-41423327a604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{4f8e8918-d861-4129-b1cb-e105cb4c944e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{cd8c10d6-6834-4b33-8d80-d49963eb1552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Task">
+      <UniqueIdentifier>{aa3330df-90e5-4e71-8b26-30a8b4da958f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ui\Application.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\MainFrame.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\MainMenu.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Msg\MsgDispatcher.cpp">
+      <Filter>Msg</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\StatusBar.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Commander.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\WorkFile.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FileMgr.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Monitor.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\Task.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\BlurTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Timer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\ImgTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Color.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\BlurPane.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Core\History.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ui\Application.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\MainFrame.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\MainMenu.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Msg\MsgDispatcher.h">
+      <Filter>Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="Msg\MsgReceiver.h">
+      <Filter>Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="Msg\Message.h">
+      <Filter>Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Defensive.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StdUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Erase.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SafeDel.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\StatusBar.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Commander.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\WorkFile.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FileMgr.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Monitor.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\Task.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\BlurTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Timer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\ImgTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Color.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\ControlId.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\BlurPane.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Core\History.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,205 @@
+-----------======= WXWIDGET ========-------------
+
+1. Setup and Build Libs
+	- open Environment Variables
+	- set WXWIN : D:\Projects\Libs\wxWidgets
+
+	- build (WXWIN)\build\msw\wv_vc14.sln
+
+		WIN32:
+			DEBUG -		(WXWIN)\lib\vc_lib\mswud
+						(WXWIN)\lib\vc_lib\wxmsw31ud_core.lib
+
+			RELEASE -	(WXWIN)\lib\vc_lib\mswu
+						(WXWIN)\lib\vc_lib\wxmsw31u_core.lib
+
+			DEBUG DLL - (WXWIN)\lib\vc_dll\mswud
+						(WXWIN)\lib\vc_dll\wxmsw31ud_core.lib
+						(WXWIN)\lib\vc_dll\wxmsw31ud_core_vs_custom.dll
+
+			RELEASE DLL -	(WXWIN)\lib\vc_dll\mswu
+							(WXWIN)\lib\vc_dll\wxmsw31u_core.lib
+							(WXWIN)\lib\vc_dll\wxmsw31u_core_vs_custom.dll
+		X64:
+			DEBUG -		(WXWIN)\lib\vc_x64_lib\mswud
+						(WXWIN)\lib\vc_x64_lib\wxmsw31ud_core.lib
+
+			RELEASE -	(WXWIN)\lib\vc_x64_lib\mswu
+						(WXWIN)\lib\vc_x64_lib\wxmsw31u_core.lib
+
+			DEBUG DLL - (WXWIN)\lib\vc_x64_dll\mswud
+						(WXWIN)\lib\vc_x64_dll\wxmsw31ud_core.lib
+						(WXWIN)\lib\vc_x64_dll\wxmsw31ud_core_vs_custom.dll
+
+			RELEASE DLL -	(WXWIN)\lib\vc_x64_dll\mswu
+							(WXWIN)\lib\vc_x64_dll\wxmsw31u_core.lib
+							(WXWIN)\lib\vc_x64_dll\wxmsw31u_core_vs_custom.dll
+
+2. DEBUG
+	2.1 Additional Include Directories:
+		$(WXWIN)/include
+		X86 $(WXWIN)/lib/vc_lib/mswud
+		X64 $(WXWIN)/lib/vc_x64_lib/mswud
+
+	2.2 Preprocessor Definitionis:
+		WIN32
+		_DEBUG
+		_CRT_SECURE_NO_DEPRECATE=1
+		_CRT_NON_CONFORMING_SWPRINTFS=1
+		_SCL_SECURE_NO_WARNINGS=1
+		__WXMSW__
+		_UNICODE
+		_WINDOWS
+		NOPCH
+
+	2.3 Additional Library Directories:
+		X86 $(WXWIN)/lib/vc_lib/
+		X64 $(WXWIN)/lib/vc_x64_lib/
+
+	2.4 Additional Dependencies:
+		wxmsw31ud_core.lib;wxbase31ud.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;wsock32.lib;wininet.lib;%(AdditionalDependencies)
+
+3. RELEASE
+	2.1 Additional Include Directories:
+		$(WXWIN)/include
+		X86 $(WXWIN)/lib/vc_lib/mswu
+		X64 $(WXWIN)/lib/vc_x64_lib/mswu
+
+	2.2 Preprocessor Definitions:
+		WIN32
+		_CRT_SECURE_NO_DEPRECATE=1
+		_CRT_NON_CONFORMING_SWPRINTFS=1
+		_SCL_SECURE_NO_WARNINGS=1
+		__WXMSW__
+		NDEBUG
+		_UNICODE
+		_WINDOWS
+		NOPCH
+
+	2.3 Additional Library Directories:
+		X86 $(WXWIN)/lib/vc_lib/
+		X64 $(WXWIN)/lib/vc_x64_lib/
+
+	2.4 Additional Dependencies:
+		wxmsw31u_core.lib;wxbase31u.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;wsock32.lib;wininet.lib;%(AdditionalDependencies)
+
+4. DEBUG DLL 
+	4.1 Additional Include Directories:
+		$(WXWIN)/include
+		X86 $(WXWIN)/lib/vc_dll/mswud
+		X64 $(WXWIN)/lib/vc_x64_dll/mswud		
+
+	4.2 Preprocessor Definitionis:
+		WIN32
+		_DEBUG
+		_CRT_SECURE_NO_DEPRECATE=1
+		_CRT_NON_CONFORMING_SWPRINTFS=1
+		_SCL_SECURE_NO_WARNINGS=1
+		__WXMSW__
+		_UNICODE
+		WXUSINGDLL
+		_WINDOWS
+		NOPCH
+
+	4.3 Additional Library Directories:
+		X86 $(WXWIN)/lib/vc_dll
+		X64 $(WXWIN)/lib/vc_x64_dll
+
+	4.4 Additional Dependencies:
+		wxmsw31ud_core.lib;wxbase31ud.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;wsock32.lib;wininet.lib;%(AdditionalDependencies)
+
+	4.5 Copy required DLLs from $(WXWIN)/lib/vc_dll
+		Example:
+		wxbase31ud_vc_custom.dll
+		wxbase31ud_vc_custom.ilk
+		wxbase31ud_vc_custom.pdb
+
+5. RELEASE DLL 
+	5.1 Additional Include Directories:
+		$(WXWIN)/include
+		X86 $(WXWIN)/lib/vc_dll/mswu
+		X64 $(WXWIN)/lib/vc_x64_dll/mswu
+
+	5.2 Preprocessor Definitionis:
+		WIN32
+		_CRT_SECURE_NO_DEPRECATE=1
+		_CRT_NON_CONFORMING_SWPRINTFS=1
+		_SCL_SECURE_NO_WARNINGS=1
+		__WXMSW__
+		NDEBUG
+		_UNICODE
+		WXUSINGDLL
+		_WINDOWS
+		NOPCH
+
+	5.3 Additional Library Directories:
+		X86 $(WXWIN)/lib/vc_dll
+		X64 $(WXWIN)/lib/vc_x64_dll
+
+	5.4 Additional Dependencies:
+		wxmsw31u_core.lib;wxbase31u.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;wsock32.lib;wininet.lib;%(AdditionalDependencies)
+
+	5.5 Copy required DLLs from $(WXWIN)/lib/vc_dll
+		Example:
+		wxmsw31u_core_vc_custom.dll
+		wxmsw31u_core_vc_custom.pdb
+
+
+-----------======= GLM ========-------------
+Add Additional Include Directories:
+		$(LIBS)/glm
+
+-----------======= FREE IMAGE ========-------------
+X86
+	1. Add Additional Include Directories:
+		$(LIBS)/FreeImage/Dist/x32
+	2. Additional Library Directories:
+		$(LIBS)/FreeImage/Dist/x32
+	3 Additional Dependencies:
+		FreeImage.lib
+	4. Copy FreeImage.dll from $(LIBS)/FreeImage/Dist/x32 to
+		$(SlnDir)/Debug
+		$(SlnDir)/Debug DLL
+		$(SlnDir)/Release
+		$(SlnDir)/Release DLL
+
+X64
+	1. Add Additional Include Directories:
+		$(LIBS)/FreeImage/Dist/x64
+	2. Additional Library Directories:
+		$(LIBS)/FreeImage/Dist/x64
+	3 Additional Dependencies:
+		FreeImage.lib
+	4. Copy FreeImage.dll from $(LIBS)/FreeImage/Dist/x64 to
+		$(SlnDir)/Debug
+		$(SlnDir)/Debug DLL
+		$(SlnDir)/Release
+		$(SlnDir)/Release DLL
+
+-----------======= FREE IMAGE PLUS ========-------------
+X86
+	1. Add Additional Include Directories:
+		$(LIBS)/FreeImage/Wrapper/FreeImagePlus/dist/x32
+	2. Additional Library Directories:
+		$(LIBS)/FreeImage/Wrapper/FreeImagePlus/dist/x32
+	3 Additional Dependencies:
+		FreeImagePlus.lib
+	4. Copy FreeImagePlus.dll from $(LIBS)/FreeImage/Wrapper/FreeImagePlus/dist/x32 to
+		$(SlnDir)/Debug
+		$(SlnDir)/Debug DLL
+		$(SlnDir)/Release
+		$(SlnDir)/Release DLL
+
+X64
+	1. Add Additional Include Directories:
+		$(LIBS)/FreeImage/Wrapper/FreeImagePlus/dist/x64
+	2. Additional Library Directories:
+		$(LIBS)/FreeImage/Wrapper/FreeImagePlus/dist/x64
+	3 Additional Dependencies:
+		FreeImagePlus.lib
+	4. Copy FreeImagePlus.dll from $(LIBS)/FreeImage/Wrapper/FreeImagePlus/dist/x64 to
+		$(SlnDir)/Debug
+		$(SlnDir)/Debug DLL
+		$(SlnDir)/Release
+		$(SlnDir)/Release DLL
+

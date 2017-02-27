@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+/ipch
+/Editor/Debug
+/Editor/Debug DLL
+/Editor/Release
+/Editor/Release DLL
+/Editor/x64/Debug
+/Editor/x64/Debug DLL
+/Editor/x64/Release
+/Editor/x64/Release DLL
+/ImgEditor.VC.VC.opendb
+/ImgEditor.VC.db

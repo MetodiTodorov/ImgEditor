@@ -1,0 +1,18 @@
+Core:
+1. Link with FreeImagePlus (100%)
+2. Create GIT repo
+X. Save|Load Settings
+X. Library
+X. History
+
+Ui:
+X. Show images from library
+X. Before|After monitor
+X. Zoom: Fit, Fill, 1:1
+X. Slide monitor
+X. Export Dialog
+X. History Panel
+
+Effects:
+X. Brightness (http://stackoverflow.com/questions/2353211/hsl-to-rgb-color-conversion)
+
