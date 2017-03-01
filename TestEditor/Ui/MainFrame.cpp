@@ -11,6 +11,9 @@
 #include "Core/FileMgr.h"
 
 ///////////////////////////////////////////////////////////////////////////////
+#include "Test/Test.h"
+
+///////////////////////////////////////////////////////////////////////////////
 MainFrame::MainFrame(const wxString& title)
 	: wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(640, 480))
 {
@@ -48,6 +51,9 @@ MainFrame::MainFrame(const wxString& title)
 	// start updating
 	timer_.SetCallback(std::bind(&Monitor::Update, monitor_));
 	timer_.Start(20);
+
+
+	TestAmp();
 }
 
 ///////////////////////////////////////////////////////////////////////////////

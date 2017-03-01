@@ -20,6 +20,9 @@
     <Filter Include="Task">
       <UniqueIdentifier>{aa3330df-90e5-4e71-8b26-30a8b4da958f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{72225ac0-e675-4160-85cd-3eaebb7c7663}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ui\Application.cpp">
@@ -73,6 +76,9 @@
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="Core\History.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\TestAmp.cpp">
+      <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +154,9 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\History.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Test\Test.h">
+      <Filter>Test</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

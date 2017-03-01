@@ -55,6 +55,7 @@
     <ClCompile Include="Task\BlurTask.cpp" />
     <ClCompile Include="Task\ImgTask.cpp" />
     <ClCompile Include="Task\Task.cpp" />
+    <ClCompile Include="Test\TestAmp.cpp" />
     <ClCompile Include="Ui\Application.cpp" />
     <ClCompile Include="Ui\BlurPane.cpp" />
     <ClCompile Include="Ui\MainFrame.cpp" />
@@ -77,6 +78,7 @@
     <ClInclude Include="Task\BlurTask.h" />
     <ClInclude Include="Task\ImgTask.h" />
     <ClInclude Include="Task\Task.h" />
+    <ClInclude Include="Test\Test.h" />
     <ClInclude Include="Ui\Application.h" />
     <ClInclude Include="Ui\BlurPane.h" />
     <ClInclude Include="Ui\ControlId.h" />
