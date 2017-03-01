@@ -1,0 +1,22 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug DLL\) contains files shared from another project (Editor.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  stdafx.cpp
+  Utils.cpp
+  StatusBar.cpp
+  Monitor.cpp
+  MainMenu.cpp
+  MainFrame.cpp
+  BlurPane.cpp
+  Application.cpp
+  Task.cpp
+  ImgTask.cpp
+  BlurTask.cpp
+  MsgDispatcher.cpp
+  FileMgr.cpp
+  WorkFile.cpp
+  Timer.cpp
+  History.cpp
+  Commander.cpp
+  Color.cpp
+  Generating Code...
+  TestEditor.vcxproj -> D:\Projects\ImgEditor\x64\Debug DLL\TestEditor.exe
+  TestEditor.vcxproj -> D:\Projects\ImgEditor\x64\Debug DLL\TestEditor.pdb (Partial PDB)

@@ -1,0 +1,23 @@
+﻿  stdafx.cpp
+  Color.cpp
+  Commander.cpp
+  History.cpp
+  Timer.cpp
+  WorkFile.cpp
+  FileMgr.cpp
+  MsgDispatcher.cpp
+  BlurTask.cpp
+  ImgTask.cpp
+  Task.cpp
+  Application.cpp
+  BlurPane.cpp
+  MainFrame.cpp
+  MainMenu.cpp
+  Monitor.cpp
+  StatusBar.cpp
+  Utils.cpp
+  Generating code
+  All 1404 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Editor.vcxproj -> D:\Projects\ImgEditor\Release DLL\Editor.exe
+  Editor.vcxproj -> D:\Projects\ImgEditor\Release DLL\Editor.pdb (Full PDB)
