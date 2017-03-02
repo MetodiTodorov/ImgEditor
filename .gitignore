@@ -1,7 +1,17 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
 /ipch
+/ImgEditor.VC.VC.opendb
+/ImgEditor.VC.db
+/.vs
+
 /Editor/Debug
 /Editor/Debug DLL
 /Editor/Release
@@ -10,7 +20,15 @@
 /Editor/x64/Debug DLL
 /Editor/x64/Release
 /Editor/x64/Release DLL
-/ImgEditor.VC.VC.opendb
-/ImgEditor.VC.db
-/.vs
+
+/TestEditor/Debug
+/TestEditor/Debug DLL
+/TestEditor/Release
+/TestEditor/Release DLL
+/TestEditor/x64/Debug
+/TestEditor/x64/Debug DLL
+/TestEditor/x64/Release
+/TestEditor/x64/Release DLL
+
+
 
