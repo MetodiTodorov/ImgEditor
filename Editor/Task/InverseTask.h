@@ -14,6 +14,8 @@ public:
 	virtual std::string	GetName() const override;
 
 private:
+	void	Inverse();
+	void	InverseAccelerated();
 };
 
 ///////////////////////////////////////////////////////////////////////////////
