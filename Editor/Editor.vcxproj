@@ -54,6 +54,7 @@
     </ClCompile>
     <ClCompile Include="Task\BlurTask.cpp" />
     <ClCompile Include="Task\ImgTask.cpp" />
+    <ClCompile Include="Task\InverseTask.cpp" />
     <ClCompile Include="Task\Task.cpp" />
     <ClCompile Include="Ui\Application.cpp" />
     <ClCompile Include="Ui\BlurPane.cpp" />
@@ -76,6 +77,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Task\BlurTask.h" />
     <ClInclude Include="Task\ImgTask.h" />
+    <ClInclude Include="Task\InverseTask.h" />
     <ClInclude Include="Task\Task.h" />
     <ClInclude Include="Ui\Application.h" />
     <ClInclude Include="Ui\BlurPane.h" />

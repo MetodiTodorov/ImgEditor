@@ -2,16 +2,18 @@
 #include "ImgTask.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-ImgTask::ImgTask(wxImage img)
+ImgTask::ImgTask(wxImage img, int steps)
 	: src_(img)
 	, dst_(img.GetWidth(), img.GetHeight())
 	, regionSz_(20)
 	, regionsX_((img.GetWidth() / regionSz_) + 1)
 	, regionsY_((img.GetHeight() / regionSz_) + 1)
-	, steps_(img.GetWidth() * img.GetHeight())
+	, steps_(steps)
 	, restarted_(false)
 	, canceled_(false)
 {
+	if (steps_ <= 0)
+		steps_ = img.GetWidth() * img.GetHeight();	
 }
 
 ///////////////////////////////////////////////////////////////////////////////

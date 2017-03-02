@@ -21,7 +21,10 @@ public:
 	wxImage&		GetImage();
 	void			SetImage(const wxImage& img);
 
+	// effects
 	void			Blur(int horizontal, int vertical);
+	void			Inverse();
+
 	bool			IsChanged() const;
 	void			CancelCurrentTask();
 

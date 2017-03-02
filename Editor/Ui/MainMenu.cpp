@@ -45,11 +45,15 @@ void MainMenu::CreateEffectMenu()
 {
 	effect_ = new wxMenu;
 	blur_ = new wxMenuItem(effect_, ID_MM_Blur, wxT("Blur"));
+	inverse_ = new wxMenuItem(effect_, ID_MM_Inverse, wxT("Inverse"));
+
 	effect_->Append(blur_);
+	effect_->Append(inverse_);
 
 	Append(effect_, wxT("&Effect"));
 
 	Bind(wxEVT_COMMAND_MENU_SELECTED, &MainMenu::OnBlur, this, ID_MM_Blur);
+	Bind(wxEVT_COMMAND_MENU_SELECTED, &MainMenu::OnInverse, this, ID_MM_Inverse);
 
 	RefreshEffectMenus();
 }
@@ -94,6 +98,13 @@ void MainMenu::OnBlur(wxCommandEvent& ev)
 {
 	auto dispatcher = GetMsgDispatcher();
 	dispatcher->Raise(Message::BeginBlurEffect);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void MainMenu::OnInverse(wxCommandEvent& ev)
+{
+	auto dispatcher = GetMsgDispatcher();
+	dispatcher->Raise(Message::BeginInverseEffect);
 }
 
 ///////////////////////////////////////////////////////////////////////////////

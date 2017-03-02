@@ -20,6 +20,7 @@ private:
 	void OnOpen(wxCommandEvent& ev);
 	void OnQuit(wxCommandEvent& ev);
 	void OnBlur(wxCommandEvent& ev);
+	void OnInverse(wxCommandEvent& ev);	
 
 	void OnMsgReceived(const Message& msg) override;
 	void OnLoadFile(const Message& msg);	
@@ -36,6 +37,7 @@ private:
 
 	wxMenu*		effect_;
 	wxMenuItem*	blur_;
+	wxMenuItem*	inverse_;
 };
 
 ///////////////////////////////////////////////////////////////////////////////

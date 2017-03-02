@@ -25,6 +25,7 @@ void Commander::OnMsgReceived(const Message& msg)
 	DISPATCH(BeginCloseFile);
 	DISPATCH(EndSaveAs);
 	DISPATCH(BeginBlurEffect);
+	DISPATCH(BeginInverseEffect);
 	}
 }
 
@@ -86,6 +87,16 @@ void Commander::OnBeginBlurEffect(const Message& msg)
 
 	auto& blurMsg = static_cast<const BeginBlurMsg&>(msg);
 	current->Blur(blurMsg.Horizontal, blurMsg.Vertical);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void Commander::OnBeginInverseEffect(const Message& msg)
+{
+	auto fileMgr = GetFileMgr();
+	auto current = fileMgr->GetCurrent();
+	AssertReturnUnless(current);
+
+	current->Inverse();
 }
 
 ///////////////////////////////////////////////////////////////////////////////

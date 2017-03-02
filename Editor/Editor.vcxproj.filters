@@ -74,6 +74,9 @@
     <ClCompile Include="Core\History.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="Task\InverseTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ui\Application.h">
@@ -148,6 +151,9 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\History.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\InverseTask.h">
+      <Filter>Task</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

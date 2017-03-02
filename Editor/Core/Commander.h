@@ -16,6 +16,7 @@ private:
 	void OnBeginCloseFile(const Message& msg);
 	void OnEndSaveAs(const Message& msg);
 	void OnBeginBlurEffect(const Message& msg);	
+	void OnBeginInverseEffect(const Message& msg);
 
 private:
 };

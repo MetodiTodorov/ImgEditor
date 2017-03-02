@@ -10,7 +10,7 @@
 class ImgTask : public Task
 {
 public:
-	ImgTask(wxImage img);
+	ImgTask(wxImage img, int steps = -1);
 	virtual ~ImgTask() = default;
 
 	const wxImage&		GetSrcImage() const;
@@ -34,8 +34,7 @@ protected:
 	void SetColor(int x, int y, const Color& c);
 	std::vector<Color> GetNeighbors(int x, int y, int hRadius = 1, int vRadius = 1);
 
-private:
-	wxImage				dst_;
+private:	
 	std::vector<int>	dirtyRegions_;
 	const int			regionSz_;
 	const int			regionsX_;
@@ -43,6 +42,7 @@ private:
 
 protected:
 	const wxImage		src_;	
+	wxImage				dst_;
 	int					steps_;
 	bool				restarted_;
 	bool				canceled_;

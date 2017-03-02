@@ -2,6 +2,7 @@
 #include "WorkFile.h"
 #include "Task/ImgTask.h"
 #include "Task/BlurTask.h"
+#include "Task/InverseTask.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 WorkFile::WorkFile()
@@ -105,6 +106,22 @@ void WorkFile::Blur(int horizontal, int vertical)
 			auto blur = new BlurTask(image_.Copy(), horizontal, vertical);
 			history_.PushNewTask(blur);
 		}		
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void WorkFile::Inverse()
+{
+	auto current = history_.GetCurrentTask();
+	if (current && current->Is("Inverse"))
+	{
+		// do nothing
+	}
+	else
+	{
+		// inverse image
+		auto task = new InverseTask(image_.Copy());
+		history_.PushNewTask(task);
 	}
 }
 

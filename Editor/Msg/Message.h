@@ -19,6 +19,7 @@ public:
 		BeginSaveAs,		// wanna save with new title
 		EndSaveAs,			// save pic with new title
 		BeginBlurEffect,	// start blur effect
+		BeginInverseEffect,	// start inverse effect
 		Working,			// working status
 	};
 
