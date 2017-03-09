@@ -15,4 +15,5 @@ X. History Panel
 
 Effects:
 X. Brightness (http://stackoverflow.com/questions/2353211/hsl-to-rgb-color-conversion)
+X. Histogram Equalization (http://fourier.eng.hmc.edu/e161/lectures/contrast_transform/node2.html)
 
